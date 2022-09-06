@@ -1,0 +1,9 @@
+[Unit]
+Description=Plex Inotify daemon
+
+[Service]
+Type=exec
+ExecStart=/usr/local/bin/plex-inotify.sh
+
+[Install]
+WantedBy=multi-user.target
